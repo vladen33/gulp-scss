@@ -17,7 +17,7 @@ function scss() {
     mediaquery(),
     //cssnano()
   ];
-  return gulp.src('src/**/*.scss')
+  return gulp.src('src/layouts/default.scss')
         .pipe(sass())
         .pipe(concat('bundle.css'))
         .pipe(postcss(plugins))
